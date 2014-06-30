@@ -7,13 +7,11 @@ img.typekit-badge {
 ::selection {
   background: #1ABC9C;
   /* Safari */
-
   color: #fff;
 }
 ::-moz-selection {
   background: #1ABC9C;
   /* Firefox */
-
   color: #fff;
 }
 .container {
