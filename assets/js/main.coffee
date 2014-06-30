@@ -43,6 +43,10 @@ jQuery ->
   setInterval (e) ->
     if imgs.length
       imgs.trigger 'mouseout'
-      $(imgs[i++%6]).trigger 'mouseover'
+      $(imgs[i++%7]).trigger 'mouseover'
   , 2000
+
+  $('.spec-toggler').click ->
+    $this = $ this
+    $this.next().slideToggle()
   true

@@ -57,9 +57,14 @@
     setInterval(function(e) {
       if (imgs.length) {
         imgs.trigger('mouseout');
-        return $(imgs[i++ % 6]).trigger('mouseover');
+        return $(imgs[i++ % 7]).trigger('mouseover');
       }
     }, 2000);
+    $('.spec-toggler').click(function() {
+      var $this;
+      $this = $(this);
+      return $this.next().slideToggle();
+    });
     return true;
   });
 
