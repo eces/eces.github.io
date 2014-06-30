@@ -70,6 +70,7 @@ module.exports = (grunt) ->
         # ]
         files: [
           'assets/css/bootstrap.css': 'assets/css/bootstrap/bootstrap.less'
+          'assets/css/main.css': 'assets/css/main.less'
         ]
         ext: '.css'
          
@@ -84,8 +85,9 @@ module.exports = (grunt) ->
         expand: true
         flatten: false
         cwd: ''
-        src: [
-          'assets/css/*.less'
+        files: [
+          'assets/css/bootstrap.css': 'assets/css/bootstrap/bootstrap.less'
+          'assets/css/main.css': 'assets/css/main.less'
         ]
         ext: '.css'
 
