@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    //- meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name='subject' content=_.get(locals, 'seo.subject'))
+    meta(name='keywords' content=_.get(locals, 'seo.keywords'))
+    meta(name='description' content=_.get(locals, 'seo.description'))
+    meta(property='og:title' content=_.get(locals, 'seo.og:title'))
+    meta(property='og:description' content=_.get(locals, 'seo.og:description'))
+    title=_.get(locals, 'title')
+    link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css')
+    //- link(rel="stylesheet" href="//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css")
+    style.
+      html {
+        font-size: 0.75rem !important;
+      }
+      p {
+        line-height: 1.85rem;
+      }
+      .item-container {
+        padding-left: 3rem;
+        margin: 1rem 0rem;
+      }
+      .item-container > .item-name {
+        color: #333;
+        margin: 0;
+      }
+      .item-container > .item-note {
+        color: #666;
+        word-break: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        font-size: 1rem;
+        margin-left: 2px;
+      }
+      .item-children-container {
+        border-left: solid 1px #f0f0f0;
+      }
+      .item-name {
+        font-weight: normal;
+        margin-left: 1.5rem;
+      }
+      .item-name:before {
+        content: "•";
+        margin-left: -1.5rem;
+        color: #333;
+        padding: 0 0.5rem;
+      }
+      .item-link {
+        font-weight: normal;
+        border-bottom: solid 1px;
+        //- margin-left: 1.5rem;
+      }
+      .item-link:before {
+        content: "•";
+        margin-left: -1.5rem;
+        color: #333;
+        padding: 0 0.5rem;
+        float: left;
+      }
+      footer {
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        color: #666;
+      }
+
+    block header
+
+  body
+    .ui.text.container
+      block body
+
+      footer
+        | Generated from&nbsp;
+        a(href='https://github.com/eces/publish-workflowy') publish-workflowy
+        | &nbsp;with ❤︎.
+
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js')
+    if script
+      script= script
+
+    block footer
