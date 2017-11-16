@@ -1,0 +1,19 @@
+{
+  "name": "eces.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wf https://workflowy.com/s/Npp.U8lS6ulstF -o=. -c=config.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eces/eces.github.io.git"
+  },
+  "author": "Jin Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eces/eces.github.io/issues"
+  },
+  "homepage": "https://github.com/eces/eces.github.io#readme"
+}
