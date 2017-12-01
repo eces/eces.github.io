@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "wf https://workflowy.com/s/Npp.U8lS6ulstF -o=. -c=config.yml"
+    "build": "wf https://workflowy.com/s/Npp.U8lS6ulstF --template=segment-ui --output=. --configure=config.yml"
   },
   "repository": {
     "type": "git",
