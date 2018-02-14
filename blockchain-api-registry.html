@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="subject" content="Posts by @eces"><meta name="keywords" content="eces"><meta name="description" content="Posts by @eces"><meta property="og:title" content="Posts by @eces"><meta property="og:description" content="Posts by @eces"><title>Blockchain API registry</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css"><link rel="stylesheet" href="https:////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"><style>/* 
+* {
+  font-family: "Nanum Myeongjo";
+}
+*/
+html {
+  font-size: 0.75rem !important;
+}
+p {
+  line-height: 1.85rem;
+  color: #333;
+}
+.item-container {
+  padding-left: 3rem;
+  margin: 1rem 0rem;
+}
+.item-container > .item-name {
+  color: #333;
+  margin: 0;
+}
+.item-container > .item-note {
+  color: #666;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  margin-left: 2px;
+}
+.item-children-container {
+  border-left: solid 1px #f0f0f0;
+}
+.item-name {
+  font-weight: normal;
+  margin-left: 1.5rem;
+}
+.item-name:before {
+  content: "•";
+  margin-left: -1.5rem;
+  color: #333;
+  padding: 0 0.5rem;
+}
+.item-link {
+  font-weight: normal;
+  border-bottom: solid 1px;
+  //- margin-left: 1.5rem;
+}
+.item-link:before {
+  content: "•";
+  margin-left: -1.5rem;
+  color: #333;
+  padding: 0 0.5rem;
+  float: left;
+}
+.hljs {
+  padding: 1.0rem;
+}
+ul, ol {
+  padding-left: 2rem;
+}
+footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+}
+img {
+  width: 100%;
+}</style></head><body><div class="ui text container"><div class="ui text container"><h1 class="ui dividing header" style="padding-top:3rem;">Blockchain API registry</h1><p><p> Authored by <a href="https://github.com/eces">Jin Lee</a>.</p>
+</p><div style="margin-left: -3rem;"><div class="item-container"><h4 class="item-name" href="#배경">배경</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#사용자와 소프트웨어는 UI를 통해 소통">사용자와 소프트웨어는 UI를 통해 소통</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#소프트웨어와 소프트웨어는 API를 통해 소통">소프트웨어와 소프트웨어는 API를 통해 소통</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#API는 컴퓨터 초창기에도 RPC(원격함수호출), FFI(외부함수호출)등 형태로 존재했음">API는 컴퓨터 초창기에도 RPC(원격함수호출), FFI(외부함수호출)등 형태로 존재했음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#API의 사전적인 정의는 소프트웨어끼리 소통하기 위해 만들어진 기능조각, 프로토콜, 도구들">API의 사전적인 정의는 소프트웨어끼리 소통하기 위해 만들어진 기능조각, 프로토콜, 도구들</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#API는 라이브러리/프레임워크, 모듈, 컴포넌트, 모델단위, 이벤트단위등 세부구현방법이 &lt;b&gt;&lt;u&gt;열려&lt;/u&gt;&lt;/b&gt;있음">API는 라이브러리/프레임워크, 모듈, 컴포넌트, 모델단위, 이벤트단위등 세부구현방법이 <b><u>열려</u></b>있음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#정답이 없기 때문에 완벽한 API란 없기 때문에 API를 잘 만든는게 어려운 일이고, 만들어진 API를 유지보수, 개정하는 난이도가 높음">정답이 없기 때문에 완벽한 API란 없기 때문에 API를 잘 만든는게 어려운 일이고, 만들어진 API를 유지보수, 개정하는 난이도가 높음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#소프트웨어 발전 속도가 점점 빨라지고 있음. 오픈소스나 협업도구, 생산성높이는 방법론 등장등 레버지리(지렛대) 효과가 있음">소프트웨어 발전 속도가 점점 빨라지고 있음. 오픈소스나 협업도구, 생산성높이는 방법론 등장등 레버지리(지렛대) 효과가 있음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#기업용 SaaS와 같이, 소프트웨어는 소프트웨어가 널리 쓰임으로서 의미가 더 커짐. 사회적 합의과정(consensus)가 중요함">기업용 SaaS와 같이, 소프트웨어는 소프트웨어가 널리 쓰임으로서 의미가 더 커짐. 사회적 합의과정(consensus)가 중요함</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#카카오톡 메신저: 위변조 없이 상대방과 대화한다는 믿음. 전화를 대체/상호보완한다는 믿음">카카오톡 메신저: 위변조 없이 상대방과 대화한다는 믿음. 전화를 대체/상호보완한다는 믿음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#구글 서비스등 지메일: 민감한 정보이지만 규모가 있으면 오히려 안정하다는 믿음">구글 서비스등 지메일: 민감한 정보이지만 규모가 있으면 오히려 안정하다는 믿음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#페이스북, 인스타그램등: 접근제어, 저작권보호, 개인정보보호, 사회통념에 따라 바뀐다는 믿음">페이스북, 인스타그램등: 접근제어, 저작권보호, 개인정보보호, 사회통념에 따라 바뀐다는 믿음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#앱스토어: 저작물에 대한 권리보호, 판매금 정산, 심의인증절차를 거친 완제품이라는 믿음">앱스토어: 저작물에 대한 권리보호, 판매금 정산, 심의인증절차를 거친 완제품이라는 믿음</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#zapier:">zapier:</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#amazon cloud services:">amazon cloud services:</h4><div class="item-note"></div><div class="item-children-container"></div></div></div></div></div></div><div class="item-container"><h4 class="item-name" href="#문제">문제</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#좋은 기능을 만들고 다른 소프트웨어를 위해 쓰이도록 API를 여는게 힘들다">좋은 기능을 만들고 다른 소프트웨어를 위해 쓰이도록 API를 여는게 힘들다</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#점점 HTTP API를 넘어서 Event-driven API를 만들어야함">점점 HTTP API를 넘어서 Event-driven API를 만들어야함</h4><div class="item-note"></div><div class="item-children-container"></div></div></div></div><div class="item-container"><h4 class="item-name" href="#제품">제품</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#API 허브를 제공하여 누구나 무료 API를 공개할수있음">API 허브를 제공하여 누구나 무료 API를 공개할수있음</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#순차적으로~ cli, ui, api 마치 라이브러리계의 npm 같이">순차적으로~ cli, ui, api 마치 라이브러리계의 npm 같이</h4><div class="item-note"></div><div class="item-children-container"></div></div><div class="item-container"><h4 class="item-name" href="#순차적으로~ ip, domain, sqs, grpcq, db">순차적으로~ ip, domain, sqs, grpcq, db</h4><div class="item-note"></div><div class="item-children-container"></div></div></div></div><div class="item-container"><h4 class="item-name" href="#누구나 유료 API를 과금할수있음">누구나 유료 API를 과금할수있음</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#정산은 any base coin">정산은 any base coin</h4><div class="item-note"></div><div class="item-children-container"></div></div></div></div><div class="item-container"><h4 class="item-name" href="#APIdp eogks 이용량 제한과 과금을 개발리소스없이 영업/운영이 조절하도록한다.">APIdp eogks 이용량 제한과 과금을 개발리소스없이 영업/운영이 조절하도록한다.</h4><div class="item-note"></div><div class="item-children-container"></div></div></div></div><div class="item-container"><h4 class="item-name" href="#관련">관련</h4><div class="item-note"></div><div class="item-children-container"><div class="item-container"><h4 class="item-name" href="#https://realtimeapi.io/">https://realtimeapi.io/</h4><div class="item-note"></div><div class="item-children-container"></div></div></div></div></div><a class="ui fluid button" href="index.html">Back</a></div><footer>Generated from&nbsp;<a href="https://github.com/eces/publish-workflowy" target="_blank">publish-workflowy</a>&nbsp;with ❤︎.</footer></div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script>//- Turbolinks.start();
+//- $(document).on('turbolinks:click', function(event) {
+//-   NProgress.start();
+//-   if(location.protocol == 'file:'){
+//-     event.preventDefault()
+//-   }
+//- });
+//- $(document).on('turbolinks:render', function() {
+//-   NProgress.done();
+//-   NProgress.remove();
+//- });
+hljs.initHighlightingOnLoad();</script></body></html>
