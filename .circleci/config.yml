@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: npm i -g publish-workflowy
+      - run: npm run build
+      - deploy:
+        name: Trigger
+        command: |
+          git config credential.helper 'cache --timeout=120'
+          git config user.email "eces92+bot@gmail.com"
+          git config user.name "Deployment Bot"
+          git commit --allow-empty -m "Trigger deployment"
+          git push master
