@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eces/eces.github.io/issues"
   },
-  "homepage": "https://github.com/eces/eces.github.io#readme"
+  "homepage": "https://github.com/eces/eces.github.io#readme",
+  "devDependencies": {
+    "publish-workflowy": "^1.1.6"
+  }
 }
