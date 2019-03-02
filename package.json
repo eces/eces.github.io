@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/eces/eces.github.io#readme",
   "devDependencies": {
-    "publish-workflowy": "^1.1.6"
+    "publish-workflowy": "^1.1.8"
   }
 }
